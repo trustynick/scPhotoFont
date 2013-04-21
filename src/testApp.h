@@ -3,6 +3,7 @@
 #include "scPhoto.h"
 #include "scFont.h"
 #include <iostream>
+#include "ofxSVG.h"
 class testApp : public ofBaseApp{
 
 	public:
@@ -20,6 +21,11 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     
+    ofImage scLogo;
+    
+    ofVec2f logoPos;
+    
+    ofxSVG map;
     ofVec2f mousePressLoc;
     ofVec2f pMousePos;
     

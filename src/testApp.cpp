@@ -5,6 +5,12 @@ void testApp::setup(){
     w = ofGetWidth();
     h = ofGetWidth();
     
+    
+    map.load("chicago_maps/US-IL-Chicago-CA32.svg");
+    scLogo.loadImage("SC_orange_small.png");
+    
+    logoPos = ofVec2f(5, 50);
+    
     fontSize = h/5;
     cout<<"fontsize = "<<fontSize<<"\n";
     
@@ -20,7 +26,7 @@ void testApp::setup(){
         //cout<<"point "<<i<<"="<<p1<<"\n ";
     }
     //dotFont.
-    ofSetFrameRate(150);
+    ofSetFrameRate(200);
     int nodeTot = 0;
     int nFiles = dir.listDir("photos");
     numPhotos = dir.numFiles();
@@ -37,8 +43,8 @@ void testApp::setup(){
     translate = ofVec2f(0,0);
     
     ofSetCircleResolution(100);
-   gridX = ofGetWidth()/dims.x*4;
-    gridY = ofGetHeight()/dims.y*4;
+   gridX = ofGetWidth()/dims.x*2;
+    gridY = ofGetHeight()/dims.y*2;
     
    // gridX= 10;
    // gridY=10;
@@ -65,7 +71,7 @@ void testApp::setup(){
         
         //load images into scPhoto objects
         for(int i=0; i <numDisplay; i++){
-            ofVec2f v =ofVec2f(0,0);
+            ofVec2f v =ofVec2f(0,scLogo.height);
             scPhoto p;
            scPhotos.push_back(p);
            // cout<<"scPhotos size "<<scPhotos.size()<<"\n";
@@ -76,7 +82,6 @@ void testApp::setup(){
         for(int y = 0; y< gridY; y++){
             for(int x = 0; x< gridX; x++){
                 int index = y*gridX+x;
-                
                 scPhotos[index].process();
                 
                 
@@ -112,8 +117,28 @@ void testApp::draw(){
         
     }
     
+     ofPopMatrix();
      //ofPopMatrix();
+    ofPushMatrix();
+    //ofScale(scale,scale);
+    //ofTranslate(w-100, h-100);
+    ofTranslate(w-map.getWidth()/4, 200);
+    map.draw();
     ofPopMatrix();
+   
+    
+    //draw StoryCorps logo;
+    ofEnableAlphaBlending();
+    ofPushMatrix();
+    //ofScale(.5,.5);
+    scLogo.draw(logoPos.x,logoPos.y);
+
+    //scLogo.draw(logoPos.x,logoPos.y, scLogo.width/5, scLogo.height/5);
+     ofDisableAlphaBlending();
+     ofPopMatrix();
+    
+    
+    
 }
 
 //--------------------------------------------------------------
@@ -220,8 +245,11 @@ void testApp::formGrid(){
         for(int x = 0; x< gridX; x++){
             int index = y*gridX+x;
              scPhotos[index].fade = false;
-             scPhotos[index].tPos = ofVec2f(x* dims.y,y* dims.y);
-             scPhotos[index].shapeTrans("rect");
+             scPhotos[index].tPos = ofVec2f(x* dims.x,y* dims.y+scLogo.height);
+            scPhotos[index].shapeTrans("rect");
+            scPhotos[index].tTextScale = 1;
+
+
          }
     }
 }
@@ -239,21 +267,19 @@ int testApp::randNeg(){
 
 
 void testApp::formLetters(){
-    stringPoints = dotFont.getStringAsPoints("StoryCorps");
+    stringPoints = dotFont.getStringAsPoints("family");
     //loop through the vector of characters form our string
     
     int totalPoints = 0;
-       
     for(int i = 0; i<stringPoints.size(); i++){
         //now loop through each chars and get the subpaths
         for(int j = 0; j<stringPoints[i].getSubPaths().size(); j++){
             ofSubPath sp = stringPoints[i].getSubPaths()[j];
             ofPoint p1 = sp.getCommands()[3].cp1;
             //ofCircle(p1.x+100, p1.y+700, 3);
-            scPhotos[totalPoints].tPos = ofVec2f(p1.x+w/10,p1.y+fontSize);
-            scPhotos[totalPoints].shapeTrans("circ");
+            scPhotos[totalPoints].tPos = ofVec2f(p1.x+w/10,p1.y+fontSize+scLogo.height);
+            //scPhotos[totalPoints].shapeTrans("circ");
             scPhotos[totalPoints].tTextScale = 30/fontSize;
-            
             cout<<"tScale= "<< scPhotos[1].tTextScale<<"\n ";
             //scPhotos[totalPoints].tTextScale = .3;
             

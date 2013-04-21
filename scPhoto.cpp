@@ -43,7 +43,7 @@ void scPhoto:: init(ofImage _image, ofVec2f _pos, ofVec2f _dims){
     easeVal = 10;
     ease = ofVec2f(10,10);
     alphaVal = 100;
-    fadeVal =1;
+    fadeVal =10;
     fade = false;
     shade = false;
    }

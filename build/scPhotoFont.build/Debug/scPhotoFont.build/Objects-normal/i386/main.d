@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/myApps/scPhotoFont/src/main.cpp \
+  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/SC_Interactive/scPhotoFont/src/main.cpp \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glew/include/GL/glew.h \
@@ -113,10 +113,59 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofQTKitPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
-  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/myApps/scPhotoFont/src/testApp.h \
-  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/myApps/scPhotoFont/src/../scPhoto.h \
-  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/myApps/scPhotoFont/src/scFont.h \
-  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/myApps/scPhotoFont/src/scChar.h \
-  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/myApps/scPhotoFont/src/../node.h \
+  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/SC_Interactive/scPhotoFont/src/testApp.h \
+  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/SC_Interactive/scPhotoFont/src/../scPhoto.h \
+  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/SC_Interactive/scPhotoFont/src/scFont.h \
+  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/SC_Interactive/scPhotoFont/src/scChar.h \
+  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/SC_Interactive/scPhotoFont/src/../node.h \
+  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/SC_Interactive/scPhotoFont/ofxSvg/src/ofxSVG.h \
+  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/SC_Interactive/scPhotoFont/ofxSvg/libs/svgTiny/src/svgtiny.h \
+  ../../../libs/poco/include/Poco/URIStreamOpener.h \
+  ../../../libs/poco/include/Poco/StreamCopier.h \
+  ../../../libs/poco/include/Poco/Path.h \
+  ../../../libs/poco/include/Poco/URI.h \
+  ../../../libs/poco/include/Poco/Net/HTTPStreamFactory.h \
+  ../../../libs/poco/include/Poco/Net/Net.h \
+  ../../../libs/poco/include/Poco/Net/HTTPSession.h \
+  ../../../libs/poco/include/Poco/Net/StreamSocket.h \
+  ../../../libs/poco/include/Poco/Net/Socket.h \
+  ../../../libs/poco/include/Poco/Net/SocketImpl.h \
+  ../../../libs/poco/include/Poco/Net/SocketDefs.h \
+  ../../../libs/poco/include/Poco/Net/SocketAddress.h \
+  ../../../libs/poco/include/Poco/Net/IPAddress.h \
+  ../../../libs/poco/include/Poco/Timespan.h \
+  ../../../libs/poco/include/Poco/Any.h \
+  ../../../libs/poco/include/Poco/URIStreamFactory.h \
+  ../../../libs/poco/include/Poco/XML/XMLString.h \
+  ../../../libs/poco/include/Poco/XML/XML.h \
+  ../../../libs/poco/include/Poco/DOM/DOMParser.h \
+  ../../../libs/poco/include/Poco/SAX/SAXParser.h \
+  ../../../libs/poco/include/Poco/SAX/XMLReader.h \
+  ../../../libs/poco/include/Poco/XML/ParserEngine.h \
+  ../../../libs/poco/include/Poco/XML/expat.h \
+  ../../../libs/poco/include/Poco/XML/expat_external.h \
+  ../../../libs/poco/include/Poco/XML/XMLStream.h \
+  ../../../libs/poco/include/Poco/SAX/Locator.h \
+  ../../../libs/poco/include/Poco/TextEncoding.h \
+  ../../../libs/poco/include/Poco/DOM/Document.h \
+  ../../../libs/poco/include/Poco/DOM/AbstractContainerNode.h \
+  ../../../libs/poco/include/Poco/DOM/AbstractNode.h \
+  ../../../libs/poco/include/Poco/DOM/Node.h \
+  ../../../libs/poco/include/Poco/DOM/EventTarget.h \
+  ../../../libs/poco/include/Poco/DOM/DOMObject.h \
+  ../../../libs/poco/include/Poco/SAX/NamespaceSupport.h \
+  ../../../libs/poco/include/Poco/DOM/MutationEvent.h \
+  ../../../libs/poco/include/Poco/DOM/Event.h \
+  ../../../libs/poco/include/Poco/DOM/DocumentEvent.h \
+  ../../../libs/poco/include/Poco/DOM/Element.h \
+  ../../../libs/poco/include/Poco/XML/Name.h \
+  ../../../libs/poco/include/Poco/XML/NamePool.h \
+  ../../../libs/poco/include/Poco/AutoReleasePool.h \
+  ../../../libs/poco/include/Poco/DOM/Attr.h \
+  ../../../libs/poco/include/Poco/DOM/NodeIterator.h \
+  ../../../libs/poco/include/Poco/DOM/NodeFilter.h \
+  ../../../libs/poco/include/Poco/DOM/NamedNodeMap.h \
+  ../../../libs/poco/include/Poco/DOM/ChildNodesList.h \
+  ../../../libs/poco/include/Poco/DOM/NodeList.h \
   ../../../libs/openFrameworks/app/ofAppGlutWindow.h \
   ../../../libs/openFrameworks/app/ofAppBaseWindow.h

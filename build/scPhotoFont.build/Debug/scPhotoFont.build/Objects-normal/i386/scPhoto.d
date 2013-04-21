@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/myApps/scPhotoFont/src/../scPhoto.cpp \
-  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/myApps/scPhotoFont/src/../scPhoto.h \
+  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/SC_Interactive/scPhotoFont/src/../scPhoto.cpp \
+  /Users/NY/Documents/OpenFrameworks/of_v0072_osx_release/apps/SC_Interactive/scPhotoFont/src/../scPhoto.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glew/include/GL/glew.h \
